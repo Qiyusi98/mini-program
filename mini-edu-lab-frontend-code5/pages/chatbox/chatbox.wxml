@@ -1,0 +1,40 @@
+<!--pages/chatbox/chatbox.wxml-->
+<!-- <text>pages/chatbox/chatbox.wxml</text> -->
+<!-- padding-bottom:80px;限制文本内容区域距离底端大小，微信小程序中使用padding-bottom解决position:fixed遮挡正文内容的问题 -->
+<view id="container" style="padding-bottom:80px;">
+<view>
+    <view wx:for="{{message}}" class='messageHeight'>
+    <!--{{item.uuid}}-{{item.text}}-{{item.image_url}}-{{item.type}}-->
+
+	<block wx:if="{{item.type === 'teacher'}}">
+      <view class="chat teacher" >
+      <image src="{{item.image_url}}" class='user-photo'></image>
+      <text class='chat-message'>
+    {{item.text}}
+     </text>
+     </view>
+     </block>
+    <block wx:if="{{item.type === 'student'}}">
+      <view class="chat student" >
+      <text class='chat-message'>
+    {{item.text}}
+    </text>
+    <image src="{{item.image_url}}" class='user-photo'></image>
+
+     </view>
+     </block>
+
+
+    </view>
+  </view>
+</view>  
+
+<view class="bottom" style="width:100%;height:80px;background-color:#f0f0f0;position:fixed; bottom:0;">
+  <button class="weui-btn" type="default" plain="true" wx:if="{{totalMessage.length!=message.length}}" bindtap="addMessage" disable="true" >增加信息</button>
+  
+  <navigator
+    url="../assignment/assignment?chatboxId={{chatboxId}}"
+    hover-class="navigator-hover">
+    <button class="weui-btn" type="default" plain="true" wx:if="{{totalMessage.length==message.length}}">开始做题</button>
+  </navigator>
+</view>

@@ -1,0 +1,26 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view style="margin-top:20px">
+    <navigator
+    url="../course/course"
+    hover-class="navigator-hover"  open-type="switchTab">
+    <button class="index_button" >进入课程</button>  
+    </navigator>
+  </view>
+
+  <view wx:if="{{firstTimeUser}}">
+    <navigator
+    url="../adduserinfo/adduserinfo"
+    hover-class="navigator-hover">
+    <button class="index_button" >添加个人信息</button>
+    </navigator>
+  </view>
+
+</view>

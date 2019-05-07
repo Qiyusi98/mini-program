@@ -1,0 +1,9 @@
+/* pages/adduserinfo/adduserinfo.wxss */
+input{
+  border: 1px solid; 
+  padding: 5px;
+  background-color: white;
+}
+button{
+  border: 1px solid;
+}

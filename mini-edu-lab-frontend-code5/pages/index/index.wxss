@@ -1,0 +1,37 @@
+/**index.wxss**/
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: rgb(2, 0, 0);
+}
+
+.usermotto {
+  margin-top: 200px;
+}
+
+.course {
+  margin-top: 20px; 
+}
+
+button{
+  width: 150px;
+  height: 50px;
+  margin: 10px 5px;
+} 
+
+.index_button{
+  border: 1px solid;
+}
+
+

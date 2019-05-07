@@ -1,0 +1,48 @@
+<!--pages/myaccount/myaccount.wxml-->
+<!-- <text>pages/myaccount/myaccount.wxml</text> -->
+<view wx:if="{{validUser}}" style="margin:5px 10px" >
+  <view class="section section_gap">
+    
+    <view class="section__title">
+      <text style="font-weight: bold; font-size: x-large">{{name}}</text> ,您好！
+    </view>
+
+    <view class="section__title">
+      邮箱地址：{{email}}
+    </view>
+    <view class="section__title">
+      学号：{{stuId}}
+    </view>
+  </view>
+
+
+  <view class="menu">
+    <view class="section section_gap">
+      <text style="font-weight:bold;">我的课程</text>
+    </view>
+    <view class="menuView" wx:for="{{myClass}}" 
+    style="display: block; border: 2px solid; margin:10px 0px; padding: 5px">
+      <navigator
+        url="../contents/contents?content_id={{item.contents_id}}"
+        hover-class="navigator-hover">
+      <text>{{item.courseName}}</text>
+      </navigator>
+    </view>
+  </view>
+
+  <view class="collection">
+    <view class="section section_gap">
+      <text style="font-weight:bold; ">我的收藏</text>
+    </view>
+    <view class="menuView" wx:for="{{myCollection}}" 
+    style="display: block; border: 2px solid;margin:10px 0px; padding: 5px">
+      <text>{{item.contents}}</text>
+    </view>
+  </view>
+</view>
+<view wx:else>
+  <text 
+  style="font-size: x-large; font-weight: bold;">
+    请完善个人信息！
+  </text>
+</view>

@@ -1,0 +1,54 @@
+<!-- <text>pages/adduserinfo/adduserinfo.wxml</text> -->
+
+<form bindsubmit="formSubmit" bindreset="formReset">
+  <h1 style="font-size: x-large;font-weight:bold; margin: 10px 5px">完善个人信息</h1>
+  <view class="email section" style="margin: 10px 5px; padding: 5px">
+    <view><label>邮箱地址</label>
+
+    <text wx:if="{{emailValid}}" style="color: green; font-size: small">邮箱合法</text>
+    <text wx:else 
+    style="color: red; font-size: small; margin: 0px 5px">邮箱不合法</text>
+    
+    </view>
+    <view>    
+      <input name="email" bindinput='emailCheck'/>
+    </view>
+  </view>
+
+  <view style="margin: 10px 5px; padding: 5px">
+    <view style="">radio</view>
+    <radio-group name="radio_group">
+      <label>
+        <radio value="0" />
+        男
+      </label>
+      <label>
+        <radio value="1" />
+        女
+      </label>
+    </radio-group>
+  </view>
+
+  <view class="section section_gap" style="margin: 10px 5px; padding: 5px">
+    <view class="section__title">姓名</view>
+    <input name="username"/>
+  </view>
+
+  <view class="section section_gap" style="margin: 10px 5px; padding: 5px">
+
+    <view><label>学号地址</label>
+
+    <text wx:if="{{stuIdValid}}" style="color: green; font-size: small">学号合法</text>
+    <text wx:else 
+    style="color: red; font-size: small; margin: 0px 5px">学号不合法，应为11位数字</text>
+    </view>
+
+    <input type='number' name="student_id" bindinput='stuIdCheck'/>
+  </view>
+
+  <view class="btn-area">
+    <button form-type="submit"  style="margin: 10px 5px">提交</button>
+    <button form-type="reset" style="margin: 10px 5px">重设</button>
+  </view>
+
+</form>

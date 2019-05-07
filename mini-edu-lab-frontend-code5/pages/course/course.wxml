@@ -1,0 +1,22 @@
+<!-- <text>pages/course/course.wxml</text> -->
+
+<view class="container" wx:if="{{validUser}}">
+  <text class="text">全部课程</text>
+   
+  <view wx:for="{{courses}}">
+    <view class="course">
+      {{item.course_name}}
+      <view wx:if="{{isMyClass[item.course_name]===false}}">
+      <button class="button"data-course_name="{{item.course_name}}"data-content_id="{{item.content_id}}"bindtap="addClass">参与课程</button>
+      </view>
+      <view wx:else>
+        <navigator
+        url="../contents/contents?content_id={{item.content_id}}"
+        hover-class="navigator-hover">
+        <button class="button">进入课程</button>
+        </navigator>
+      </view>
+    </view>
+  </view>
+</view> 
+<view wx:else><text>请完善个人信息</text></view>

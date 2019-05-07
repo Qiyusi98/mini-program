@@ -1,0 +1,44 @@
+/* pages/chatbox/chatbox.wxss */
+.chat{
+	display: flex;
+	flex-flow: row wrap;
+	align-items: flex-start;
+	margin-bottom: 10px;
+  
+}
+
+
+.chat .user-photo{
+	width: 60px;
+	height: 60px;
+	background: #ccc;
+	border-radius: 50%;
+	overflow: hidden;
+}
+
+.chat .user-photo img{
+	width:100%;
+  margin-left:200px 
+}
+.chat .chat-message{
+	width: 70%;
+	padding: 15px;
+	
+	border-radius: 10px;
+	
+	font-size: 15px;
+}
+
+.student .chat-message{
+  border:1px solid;
+	background-color:white;
+  color: black;
+}
+
+.teacher .chat-message{
+  border:1px solid;
+	background-color: white;
+  color:black;
+}
+
+

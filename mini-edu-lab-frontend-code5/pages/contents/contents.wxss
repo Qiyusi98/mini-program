@@ -1,0 +1,18 @@
+/* pages/contents/contents.wxss */
+.chatbox{
+  border: solid;
+  width: 300px;
+  margin-bottom:30px; 
+  padding: 7px
+}
+
+.contents{
+  padding: 10px
+}
+.container{
+  padding-top: 0px;
+}
+
+button{
+  border: 1px solid;
+}

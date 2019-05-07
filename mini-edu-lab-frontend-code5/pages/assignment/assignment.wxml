@@ -1,0 +1,31 @@
+<!--pages/chatbox/assignment/assignment.wxml-->
+<!-- <text>pages/chatbox/assignment/assignment.wxml</text> -->
+
+<view class="container">
+  <view>  
+    <text class="topic">主题: {{chatboxId}}</text>
+  </view>
+  <text class="title">打开Windows系统的命令行提示符窗口。 按下快捷键Windows + R，然后在输入框中输入“cmd”。 按下回车键打开命令行提示符窗口。</text>
+
+  <view class="choice">
+    <radio-group class="group" name="choice_group">
+      <view>
+        <radio value="1" />
+        选项A
+      </view>
+      <view>
+        <radio value="2" />
+        选项B
+      </view>
+      <view>
+        <radio value="3" />
+        选项C
+      </view>
+      <view>
+        <radio value="4" />
+        选项D
+      </view>
+    </radio-group>
+  </view>
+    <button class="submitAnswer" bindtap='returnToMainPage'>提交</button>
+</view>

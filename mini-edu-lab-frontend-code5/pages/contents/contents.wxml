@@ -1,0 +1,20 @@
+<!--pages/contents/contents.wxml-->
+<!-- <text>pages/contents/contents.wxml</text> -->
+<view class="container">
+  <view class="contents">
+  <text 
+  style='font-weight:bold; font-size: x-large; '>
+    章节目录
+  </text>
+    <view wx:for="{{contents_name}}">
+      <view class="chatbox">
+        <navigator
+        url="../chatbox/chatbox?chatbox_id={{item.chatbox_id}}&&percent={{content_schedule[item.chatbox_id]}}"
+        hover-class="navigator-hover">
+        <button>{{item.text}}</button>
+        </navigator>
+        <progress percent="{{content_schedule[item.chatbox_id]}}"show-info></progress>
+      </view>
+    </view>
+  </view>
+</view>  
