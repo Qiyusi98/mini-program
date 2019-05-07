@@ -1,0 +1,344 @@
+﻿{
+    "course": [{
+            "course_id": 123,
+            "course_name": "计算机网络",
+            "content_id": "network"
+        },
+        {
+            "course_id": 234,
+            "course_name": "数据结构",
+            "content_id": "datastructure"
+        }, 
+        {
+            "course_id": 999999999,
+            "course_name": "编译原理",
+            "content_id": "datastructure"
+        },
+        {
+            "course_id": 999999999,
+            "course_name": "线性代数",
+            "content_id": "datastructure"
+        },
+        {
+            "course_id": 9999999999,
+            "course_name": "高级网络",
+            "content_id": "datastructure"
+        },
+        {
+            "course_id": 9999999,
+            "course_name": "概率论与数理统计",
+            "content_id": "datastructure"
+        },
+        {
+            "course_id": 9888888888,
+            "course_name": "游泳课",
+            "content_id": "datastructure"
+        },
+        {
+            "course_id": 8888888888,
+            "course_name": "通识教育",
+            "content_id": "datastructure"
+        },
+        {
+            "course_id": 8888888888,
+            "course_name": "操作系统",
+            "content_id": "datastructure"
+        },
+        {
+            "course_id": 99999999999,
+            "course_name": "计算机图形学",
+            "content_id": "datastructure"
+        },
+        {
+            "course_id": 999999999999,
+            "course_name": "人工智能入门",
+            "content_id": "datastructure"
+        },
+        {
+            "course_id": 9999999999,
+            "course_name": "高等代数",
+            "content_id": "datastructure"
+        },
+        {
+            "course_id": 99999999,
+            "course_name": "高等数学",
+            "content_id": "datastructure"
+        },
+        {
+            "course_id": 999999999,
+            "course_name": "计算机组成原理",
+            "content_id": "datastructure"
+        },
+        {
+            "course_id": 999999999,
+            "course_name": "计算机组成原理",
+            "content_id": "datastructure"
+        }
+    ],
+    "contents": [{
+            "content_id": "network",
+            "contents_name": [
+                {
+                    "id": 4,
+                    "text": "网络地址",
+                    "image_url": "http://example.com/example.png",
+                    "type": "first-level",
+                    "chatbox_id": "ip"
+                },
+                {
+                    "id": 1,
+                    "text": "IP地址",
+                    "image_url": "http://example.com/example.png",
+                    "type": "second-level",
+                    "chatbox_id": "ip"
+                },
+                {
+                    "id": 2,
+                    "text": "Mac地址",
+                    "image_url": "http://example.com/example.png",
+                    "type": "second-level",
+                    "chatbox_id": "mac"
+                },
+                {
+                    "id": 3,
+                    "text": "TCP",
+                    "image_url": "http://example.com/example.png",
+                    "type": "first-level",
+                    "chatbox_id": "tcp"
+                }
+            ]
+        },
+        {
+            "content_id": "datastructure",
+            "contents_name": [{
+                    "id": 1,
+                    "text": "快速排序",
+                    "image_url": "http://example.com/example.png",
+                    "type": "二级标题",
+                    "chatbox_id": "qsort"
+                },
+                {
+                    "id": 2,
+                    "text": "二叉树",
+                    "image_url": "http://example.com/example.png",
+                    "type": "一级标题",
+                    "chatbox_id": "binarytree"
+                },
+                {
+                    "id": 3,
+                    "text": "散列表",
+                    "image_url": "http://example.com/example.png",
+                    "type": "二级标题",
+                    "chatbox_id": "hashtable"
+                }
+            ]
+        }
+    ],
+    "chatbox": [{
+            "chatbox_id": "ip",
+            "text": "IP地址",
+            "image_url": "http://example.com/example.png",
+            "type": "second-level",
+            "message": [{
+                "uuid": "22a738b0-7a98-4d90-b428-2248ce75a1bb",
+                "text": "1111111",
+                "image_url": "http://localhost:5300/assets/images/user-avatar/0592cae6-6af7-11e9-a923-1681be663d3e/iron-man.jpg",
+                "type": "teacher"
+            }, {
+                "uuid": "6b923941-2477-497c-beb1-776f11a2db8e",
+                "text": "222222",
+                "image_url": "http://localhost:5300/assets/images/user-avatar/0592cfaa-6af7-11e9-a923-1681be663d3e/spider-man.jpg",
+                "type": "student"
+            }, {
+                "uuid": "974603d2-cd6d-4bf3-82d0-5554d460ad17",
+                "text": "3333",
+                "image_url": "http://localhost:5300/assets/images/user-avatar/0592cfaa-6af7-11e9-a923-1681be663d3e/spider-man.jpg",
+                "type": "student"
+            },
+            {
+                "uuid": "22a738b0-7a98-4d90-b428-2248ce75a1bb",
+                "text": "444444",
+                "image_url": "http://localhost:5300/assets/images/user-avatar/0592cfaa-6af7-11e9-a923-1681be663d3e/spider-man.jpg",
+                "type": "student"
+            }, {
+                "uuid": "6b923941-2477-497c-beb1-776f11a2db8e",
+                "text": "555555",
+                "image_url": "http://localhost:5300/assets/images/user-avatar/0592cae6-6af7-11e9-a923-1681be663d3e/iron-man.jpg",
+                "type": "teacher"
+            }, {
+                "uuid": "974603d2-cd6d-4bf3-82d0-5554d460ad17",
+                "text": "66666",
+                "image_url": "http://localhost:5300/assets/images/user-avatar/0592cae6-6af7-11e9-a923-1681be663d3e/iron-man.jpg",
+                "type": "teacher"
+            },
+            {
+                "uuid": "22a738b0-7a98-4d90-b428-2248ce75a1bb",
+                "text": "777777",
+                "image_url": "http://localhost:5300/assets/images/user-avatar/0592cfaa-6af7-11e9-a923-1681be663d3e/spider-man.jpg",
+                "type": "student"
+            }, {
+                "uuid": "6b923941-2477-497c-beb1-776f11a2db8e",
+                "text": "8888888",
+                "image_url": "http://localhost:5300/assets/images/user-avatar/0592cfaa-6af7-11e9-a923-1681be663d3e/spider-man.jpg",
+                "type": "student"
+            }, {
+                "uuid": "974603d2-cd6d-4bf3-82d0-5554d460ad17",
+                "text": "999999",
+                "image_url": "http://localhost:5300/assets/images/user-avatar/0592cae6-6af7-11e9-a923-1681be663d3e/iron-man.jpg",
+                "type": "teacher"
+            },
+            {
+                "uuid": "22a738b0-7a98-4d90-b428-2248ce75a1bb",
+                "text": "1010101010101010",
+                "image_url": "http://localhost:5300/assets/images/user-avatar/0592cfaa-6af7-11e9-a923-1681be663d3e/spider-man.jpg",
+                "type": "student"
+            }, {
+                "uuid": "6b923941-2477-497c-beb1-776f11a2db8e",
+                "text": "11-11-11-11-11-11-11",
+                "image_url": "http://localhost:5300/assets/images/user-avatar/0592cfaa-6af7-11e9-a923-1681be663d3e/spider-man.jpg",
+                "type": "student"
+            }, {
+                "uuid": "974603d2-cd6d-4bf3-82d0-5554d460ad17",
+                "text": "12-12-12-12-12-12-12",
+                "image_url": "http://localhost:5300/assets/images/user-avatar/0592cfaa-6af7-11e9-a923-1681be663d3e/spider-man.jpg",
+                "type": "student"
+            },{
+                "uuid": "974603d2-cd6d-4bf3-82d0-5554d460ad17",
+                "text": "13-13-13-13-13-13-13",
+                "image_url": "http://localhost:5300/assets/images/user-avatar/0592cfaa-6af7-11e9-a923-1681be663d3e/spider-man.jpg",
+                "type": "student"
+            },{
+                "uuid": "974603d2-cd6d-4bf3-82d0-5554d460ad17",
+                "text": "14-14-14-14-14-14-14",
+                "image_url": "http://localhost:5300/assets/images/user-avatar/0592cfaa-6af7-11e9-a923-1681be663d3e/spider-man.jpg",
+                "type": "student"
+            },{
+                "uuid": "974603d2-cd6d-4bf3-82d0-5554d460ad17",
+                "text": "15-15-15-15-15-15-15",
+                "image_url": "http://localhost:5300/assets/images/user-avatar/0592cfaa-6af7-11e9-a923-1681be663d3e/spider-man.jpg",
+                "type": "student"
+            },{
+                "uuid": "974603d2-cd6d-4bf3-82d0-5554d460ad17",
+                "text": "16-16-16-16-16-16-16",
+                "image_url": "http://localhost:5300/assets/images/user-avatar/0592cfaa-6af7-11e9-a923-1681be663d3e/spider-man.jpg",
+                "type": "student"
+            },{
+                "uuid": "974603d2-cd6d-4bf3-82d0-5554d460ad17",
+                "text": "17-17-17-17-17-17-17",
+                "image_url": "http://localhost:5300/assets/images/user-avatar/0592cfaa-6af7-11e9-a923-1681be663d3e/spider-man.jpg",
+                "type": "student"
+            }
+        ]
+        },
+        {
+            "chatbox_id": "tcp",
+            "text": "TCP",
+            "image_url": "http://example.com/example.png",
+            "type": "teacher",
+            "message": [{
+                "uuid": "2f9b90a2-f36f-4c06-aeb4-fadf132c2176",
+                "text": "在政治",
+                "image_url":"http://localhost:5300/assets/images/user-avatar/0592cfaa-6af7-11e9-a923-1681be663d3e/spider-man.jpg",
+                "type": "student"
+            }, {
+                "uuid": "be33f2fe-514e-4284-ba21-057b7dc06d2a",
+                "text": "在政治",
+                "image_url": "http://localhost:5300/assets/images/user-avatar/0592cfaa-6af7-11e9-a923-1681be663d3e/spider-man.jpg",
+                "type": "student"
+            }, {
+                "uuid": "e22c5a58-cf42-4d81-9333-29eb7790697c",
+                "text": "在政治",
+                "image_url": "http://localhost:5300/assets/images/user-avatar/0592cfaa-6af7-11e9-a923-1681be663d3e/spider-man.jpg",
+                "type": "student"
+            }]
+        },
+        {
+            "chatbox_id": "mac",
+            "text": "Mac地址",
+            "image_url": "http://example.com/example.png",
+            "type": "teacher",
+            "message": [{
+                "uuid": "9b5a0085-0474-4371-8f58-d6fbaefd5a69",
+                "text": "在政治",
+                "image_url": "http://localhost:5300/assets/images/user-avatar/0592cfaa-6af7-11e9-a923-1681be663d3e/spider-man.jpg",
+                "type": "student"
+            }, {
+                "uuid": "505d0715-8e86-43b7-a6b6-8e6459512a6c",
+                "text": "在政治",
+                "image_url": "http://localhost:5300/assets/images/user-avatar/0592cfaa-6af7-11e9-a923-1681be663d3e/spider-man.jpg",
+                "type": "student"
+            }, {
+                "uuid": "13e70134-962a-4819-902b-fc4d67c05f79",
+                "text": "在政治",
+                "image_url": "http://localhost:5300/assets/images/user-avatar/0592cfaa-6af7-11e9-a923-1681be663d3e/spider-man.jpg",
+                "type": "student"
+            }]
+        },
+        {
+            "chatbox_id": "qsort",
+            "text": "快速排序",
+            "image_url": "http://example.com/example.png",
+            "type": "teacher",
+            "message": [{
+                "uuid": "99ddfed3-aa2e-4fe6-9791-89f77e79dd5a",
+                "text": "快速排序（Quicksort）是对冒泡排序的一种改进",
+                "image_url": "http://localhost:5300/assets/images/user-avatar/0592cae6-6af7-11e9-a923-1681be663d3e/iron-man.jpg",
+                "type": "teacher"
+            }, {
+                "uuid": "3da5cee9-e678-4153-8d72-616bdd4e69fb",
+                "text": "快速排序由C. A. R. Hoare在1960年提出",
+                "image_url":"http://localhost:5300/assets/images/user-avatar/0592cae6-6af7-11e9-a923-1681be663d3e/iron-man.jpg",
+                "type": "teacher"
+            }, {
+                "uuid": "93492b5b-080a-4d44-941d-328723bef8af",
+                "text": "快速排序时间复杂度是多少？",
+                "image_url": "http://localhost:5300/assets/images/user-avatar/0592cfaa-6af7-11e9-a923-1681be663d3e/spider-man.jpg",
+                "type": "student"
+            }]
+        },
+        {
+            "chatbox_id": "binarytree",
+            "text": "二叉树",
+            "image_url": "http://example.com/example.png",
+            "type": "teacher",
+            "message": [{
+                "uuid": "9363cb88-d81f-4463-9e9e-0fefa75cbaa8",
+                "text": "在计算机科学中，二叉树是每个结点最多有两个子树的树结构",
+                "image_url": "http://localhost:5300/assets/images/user-avatar/0592cae6-6af7-11e9-a923-1681be663d3e/iron-man.jpg",
+                "type": "teacher"
+            }, {
+                "uuid": "4f64248c-62ce-460b-abed-38959ee3ab0a",
+                "text": "二叉树的遍历方式有哪些？",
+                "image_url": "http://localhost:5300/assets/images/user-avatar/0592cfaa-6af7-11e9-a923-1681be663d3e/spider-man.jpg",
+                "type": "student"
+            }, {
+                "uuid": "3c08087a-1d5e-4695-8355-696915a42b78",
+                "text": "二叉树常被用于实现二叉查找树和二叉堆",
+                "image_url": "http://localhost:5300/assets/images/user-avatar/0592cae6-6af7-11e9-a923-1681be663d3e/iron-man.jpg",
+                "type": "teacher"
+            }]
+        },
+        {
+            "chatbox_id": "hashtable",
+            "text": "哈希表",
+            "image_url": "http://example.com/example.png",
+            "type": "teacher",
+            "message": [{
+                "uuid": "5c66b306-10be-49a8-8802-1ecc3ae049dc",
+                "text": "哈希表的原理是什么？",
+                "image_url": "http://localhost:5300/assets/images/user-avatar/0592cfaa-6af7-11e9-a923-1681be663d3e/spider-man.jpg",
+                "type": "student"
+            }, {
+                "uuid": "0b4c55cf-2552-403c-acca-ab708d2087cb",
+                "text": "散列表是根据关键码值(Key-value)而直接进行访问的数据结构",
+                "image_url": "http://localhost:5300/assets/images/user-avatar/0592cae6-6af7-11e9-a923-1681be663d3e/iron-man.jpg",
+                "type": "teacher"
+            }, {
+                "uuid": "a66f3939-b37b-4170-b811-380dfe5ebda3",
+                "text": "哈希表的另一个名称是散列表",
+                "image_url": "http://localhost:5300/assets/images/user-avatar/0592cae6-6af7-11e9-a923-1681be663d3e/iron-man.jpg",
+                "type": "teacher"
+            }]
+        }
+    ]
+}
