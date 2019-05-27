@@ -1,0 +1,90 @@
+DROP TABLE IF EXISTS student_course;
+DROP TABLE IF EXISTS course;
+DROP TABLE IF EXISTS contents;
+DROP TABLE IF EXISTS chatbox_msg;
+DROP TABLE IF EXISTS teacher;
+DROP TABLE IF EXISTS student;
+DROP TABLE IF EXISTS chatbox;
+DROP TABLE IF EXISTS message;
+
+
+CREATE TABLE IF NOT EXISTS teacher(
+	teacher_id INT(11) NOT NULL AUTO_INCREMENT,
+	teacher_name VARCHAR(100) NOT NULL,
+	password VARCHAR(100) NOT NULL,
+
+	PRIMARY KEY(teacher_id)
+);
+
+CREATE TABLE IF NOT EXISTS student(
+	student_id VARCHAR(11) NOT NULL,
+	student_name VARCHAR(100) NOT NULL,
+	email VARCHAR(100) NOT NULL,
+	password VARCHAR(100) NOT NULL,
+	sex INT(1) NOT NULL,
+
+	PRIMARY KEY(student_id)
+);
+
+CREATE TABLE IF NOT EXISTS course(
+	course_id INT(11) NOT NULL AUTO_INCREMENT,
+	course_name VARCHAR(100) NOT NULL,
+	content_id VARCHAR(100) NOT NULL,
+	teacher_id INT(11) NOT NULL,
+
+	PRIMARY KEY(course_id),
+	FOREIGN KEY(teacher_id) REFERENCES teacher(teacher_id)
+);
+
+CREATE TABLE IF NOT EXISTS chatbox(
+	chatbox_id VARCHAR(100) NOT NULL,
+	text VARCHAR(100),
+	image_url VARCHAR(100),
+	type VARCHAR(100) NOT NULL,
+
+	PRIMARY KEY(chatbox_id)
+);
+
+CREATE TABLE IF NOT EXISTS contents(
+	content_id VARCHAR(100) NOT NULL,
+	id INT(11) NOT NULL,
+	text VARCHAR(100) NOT NULL,
+	image_url VARCHAR(100),
+	type VARCHAR(100),
+	chatbox_id VARCHAR(100) NOT NULL,
+
+	PRIMARY KEY(content_id, id),
+	FOREIGN KEY(chatbox_id) REFERENCES chatbox(chatbox_id)
+);
+
+
+
+CREATE TABLE IF NOT EXISTS message(
+	uuid INT(11) NOT NULL,
+	text VARCHAR(100),
+	image_url VARCHAR(100),
+	type VARCHAR(100),
+
+	PRIMARY KEY(uuid)
+);
+
+CREATE TABLE IF NOT EXISTS chatbox_msg(
+	chatbox_id VARCHAR(100) NOT NULL,
+	uuid INT(11) NOT NULL,
+
+	PRIMARY KEY(chatbox_id,uuid),
+	FOREIGN KEY(chatbox_id) REFERENCES chatbox(chatbox_id),
+	FOREIGN KEY(uuid) REFERENCES message(uuid)
+);
+
+CREATE TABLE IF NOT EXISTS student_course(
+	student_id VARCHAR(11) NOT NULL,
+	course_id INT(11) NOT NULL,
+	content_id VARCHAR(100) NOT NULL,
+	progress DOUBLE,
+	do_homework INT(1),
+
+	PRIMARY KEY(student_id, course_id, content_id),
+	FOREIGN KEY(student_id) REFERENCES student(student_id),
+	FOREIGN KEY(course_id) REFERENCES course(course_id)
+);
